@@ -14,13 +14,12 @@
 		margin-left: 50px;
 		cursor: pointer;
 
+		&:first-child {
+			margin-left: 0;
+		}
 		&:hover {
 			text-decoration: underline;
 		}
-	}
-
-	&__item:first-child {
-		margin-left: 0;
 	}
 
 	&__link {
