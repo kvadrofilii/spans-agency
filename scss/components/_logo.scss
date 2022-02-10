@@ -1,6 +1,13 @@
 .logo {
-	background-image: url("/assets/svg/logo.svg");
+	width: 120px;
+	height: 20px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
+	flex-shrink: 0;
+
+	@media (min-width: $tablet-width) {
+		width: 187px;
+		height: 32px;
+	}
 }
