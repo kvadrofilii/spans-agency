@@ -1,0 +1,54 @@
+.social {
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+
+	&__list {
+		display: flex;
+		list-style: none;
+	}
+
+	&__item {
+		margin-left: 15px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	&__link {
+		display: block;
+	}
+
+	&__ico {
+		width: 25px;
+		height: 25px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+	&__instagram {
+		background-image: url("/assets/svg/social/instagram.svg");
+	}
+
+	&__vk {
+		background-image: url("/assets/svg/social/vk.svg");
+	}
+
+	&__facebook {
+		background-image: url("/assets/svg/social/facebook.svg");
+	}
+
+	&__youtube {
+		background-image: url("/assets/svg/social/youtube.svg");
+	}
+
+	&__telegram {
+		background-image: url("/assets/svg/social/telegram.svg");
+	}
+
+	&__whatsapp {
+		background-image: url("/assets/svg/social/whatsapp.svg");
+	}
+}
