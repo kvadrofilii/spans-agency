@@ -1,0 +1,59 @@
+%button {
+	content: "";
+	display: block;
+	position: absolute;
+	border-radius: 6px;
+	transition: all 0.3s;
+}
+
+.button {
+	width: 105px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	border-radius: 6px;
+	border: none;
+	font-size: 1.6rem;
+	line-height: 110%;
+	text-decoration: none;
+	color: #faf9f9;
+	text-align: center;
+	transition: hover 0.3s ease;
+	flex-shrink: 0;
+	cursor: pointer;
+	z-index: 10;
+	background-clip: text;
+	-webkit-background-clip: text;
+
+	@media (min-width: $tablet-width) {
+		width: 137px;
+		height: 40px;
+	}
+
+	&:active,
+	&:hover::after {
+		opacity: 70%;
+	}
+
+	&::before {
+		@extend %button;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		z-index: -1;
+		background: #5a60e7;
+		background: linear-gradient(to left top, #6171ff 10%, transparent 30%, #2c2c2c, transparent 70%, #5a60e7 90%);
+	}
+
+	&::after {
+		@extend %button;
+		left: 1px;
+		top: 1px;
+		bottom: 1px;
+		right: 1px;
+		z-index: -1;
+		background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2c2c2c;
+	}
+}
