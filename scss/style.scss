@@ -4,7 +4,8 @@
 
 @import "./base/base";
 
-@import "./layouts/container", "./layouts/header", "./layouts/content-wrapper", "./layouts/footer", "./layouts/main";
+@import "./layouts/container", "./layouts/header", "./layouts/content-wrapper", "./layouts/footer", "./layouts/main",
+	"./layouts/aside";
 
 @import "./components/button", "./components/logo", "./components/ico", "./components/nav", "./components/hamburger",
 	"./components/social";
