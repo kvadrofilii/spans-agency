@@ -1,0 +1,81 @@
+.nav-second {
+	width: 210px;
+	margin: 50px 0 0 20px;
+
+	&__list,
+	&__sublist {
+		list-style: none;
+	}
+
+	&__sublist {
+		margin-left: 20px;
+		margin-top: 5px;
+	}
+
+	&__item,
+	&__subitem {
+		position: relative;
+		line-height: 140%;
+		cursor: pointer;
+	}
+
+	&__item {
+		&:last-child {
+			margin-top: 50px;
+		}
+	}
+
+	&__link,
+	&__sublink {
+		margin: 5px 0;
+		display: block;
+		color: #222222;
+		text-decoration: none;
+	}
+
+	&__link {
+		padding: 5px 10px 5px 37px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	&__sublink {
+		padding: 5px 10px 5px 10px;
+	}
+
+	&__link_active {
+		color: #5a60e7;
+		background: #efeffd;
+		border-radius: 5px;
+	}
+
+	&__ico::before {
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		left: 7px;
+		top: 3px;
+		content: "";
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	&__user-ico::before {
+		background-image: url("/assets/svg/menu/user.svg");
+	}
+
+	&__calendar-ico::before {
+		background-image: url("/assets/svg/menu/calendar.svg");
+	}
+	&__report-ico::before {
+		background-image: url("/assets/svg/menu/report.svg");
+	}
+	&__history-ico::before {
+		background-image: url("/assets/svg/menu/history.svg");
+	}
+	&__log-out-ico::before {
+		background-image: url("/assets/svg/menu/log-out.svg");
+	}
+}
