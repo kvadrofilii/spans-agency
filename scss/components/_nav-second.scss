@@ -1,15 +1,33 @@
 .nav-second {
-	width: 210px;
-	margin: 50px 0 0 20px;
+	margin: 20px 0;
+	overflow: scroll;
+
+	@media (min-width: $tablet-width) {
+		width: 210px;
+		margin: 50px 0 0 20px;
+	}
 
 	&__list,
 	&__sublist {
 		list-style: none;
 	}
 
+	&__list {
+		display: flex;
+
+		@media (min-width: $tablet-width) {
+			display: block;
+		}
+	}
+
 	&__sublist {
-		margin-left: 20px;
-		margin-top: 5px;
+		display: none;
+
+		@media (min-width: $tablet-width) {
+			display: block;
+			margin-left: 20px;
+			margin-top: 5px;
+		}
 	}
 
 	&__item,
@@ -20,8 +38,15 @@
 	}
 
 	&__item {
-		&:last-child {
-			margin-top: 50px;
+		flex-shrink: 0;
+		margin: 0 10px;
+
+		@media (min-width: $tablet-width) {
+			margin: 0;
+
+			&:last-child {
+				margin-top: 50px;
+			}
 		}
 	}
 
@@ -35,6 +60,8 @@
 
 	&__link {
 		padding: 5px 10px 5px 37px;
+		background-color: #ffffff;
+		border-radius: 5px;
 
 		&:first-child {
 			margin-top: 0;
@@ -63,7 +90,11 @@
 	}
 
 	&__user-ico::before {
-		background-image: url("/assets/svg/menu/user.svg");
+		background-image: url("/assets/svg/menu/chart.svg");
+
+		@media (min-width: $tablet-width) {
+			background-image: url("/assets/svg/menu/user.svg");
+		}
 	}
 
 	&__calendar-ico::before {
