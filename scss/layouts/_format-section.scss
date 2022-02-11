@@ -1,0 +1,27 @@
+.format-section {
+	margin: 20px 10px;
+
+	@media (min-width: $tablet-width) {
+		margin: 20px 0;
+	}
+
+	&__button {
+		width: 170px;
+		height: 40px;
+		padding: 8px 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-weight: 400;
+		font-size: 1.6rem;
+		font-family: "Montserrat", "Verdana", sans-serif;
+		color: #909090;
+		background: #fff;
+		border-radius: 5px;
+		border: none;
+	}
+
+	&__arrow-down-ico {
+		background-image: url("/assets/svg/arrow-down.svg");
+	}
+}

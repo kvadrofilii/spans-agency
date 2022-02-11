@@ -1,10 +1,12 @@
 .content-wrapper {
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
 	flex-grow: 1;
 
 	@media (min-width: $tablet-width) {
 		padding: 20px 40px;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 }

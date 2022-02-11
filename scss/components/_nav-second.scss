@@ -59,9 +59,14 @@
 	}
 
 	&__link {
+		min-width: 180px;
+		height: 40px;
 		padding: 5px 10px 5px 37px;
 		background-color: #ffffff;
 		border-radius: 5px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
 		&:first-child {
 			margin-top: 0;
@@ -73,9 +78,14 @@
 	}
 
 	&__link_active {
-		color: #5a60e7;
-		background: #efeffd;
+		color: #fff;
+		background-color: #5a60e7;
 		border-radius: 5px;
+
+		@media (min-width: $tablet-width) {
+			color: #5a60e7;
+			background-color: #efeffd;
+		}
 	}
 
 	&__ico::before {
@@ -83,10 +93,18 @@
 		height: 24px;
 		position: absolute;
 		left: 7px;
-		top: 3px;
+		top: 7px;
 		content: "";
 		background-size: contain;
 		background-repeat: no-repeat;
+	}
+
+	&__arrow-down-ico {
+		width: 24px;
+		height: 24px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image: url("/assets/svg/arrow-down.svg");
 	}
 
 	&__user-ico::before {

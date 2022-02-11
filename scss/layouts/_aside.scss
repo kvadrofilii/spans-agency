@@ -61,7 +61,9 @@
 
 	&__ratio {
 		display: flex;
+		align-items: flex-start;
 		font-size: 2rem;
+		line-height: 110%;
 
 		@media (min-width: $tablet-width) {
 			font-size: 3rem;

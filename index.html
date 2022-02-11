@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	<header class="page-header">
+	<header class="page-header ">
 		<div class="page-header__wrapper container">
 
 			<div class="page-header__logo-wrapper">
@@ -81,7 +81,7 @@
 	</header>
 
 	<div class="content-wrapper container">
-		<!--<aside class="aside">
+		<aside class="aside">
 			<div class="aside__player">
 				<div class="aside__wrapper">
 					<div class="aside__user">
@@ -139,7 +139,9 @@
 			<nav class="nav-second">
 				<ul class="nav-second__list">
 					<li class="nav-second__item">
-						<div class="nav-second__link nav-second__ico nav-second__user-ico nav-second__link_active">Статистика</div>
+						<div class="nav-second__link nav-second__ico nav-second__user-ico nav-second__link_active">
+							Статистика<span class="nav-second__arrow-down-ico"></span>
+						</div>
 						<ul class="nav-second__sublist">
 							<li class="nav-second__subitem ">
 								<a href="/" class="nav-second__sublink nav-second__link_active">Футбол</a>
@@ -167,7 +169,7 @@
 					</li>
 				</ul>
 			</nav>
-		</aside>-->
+		</aside>
 
 		<main class="main">
 
@@ -260,7 +262,55 @@
 				</div>
 			</section>
 
+			<section class="format-section">
+				<button class="format-section__button">
+					Формат <span class="ico format-section__arrow-down-ico"></span>
+				</button>
+			</section>
+
 			<section class="ratio-section">
+
+				<div class="ratio-section__table">
+					<div class="ratio-section__cell ratio-section__header">
+						<h3 class="ratio-section__title">Сезон</h3>
+					</div>
+					<div class="ratio-section__cell ratio-section__header">
+						<h3 class="ratio-section__title" id="number">
+							<div class="ratio-section__sort-ico"></div>
+							<div class="ratio-section__text_desktop">Кол-во игр</div>
+							<div class="ratio-section__text_mobile">И</div>
+						</h3>
+					</div>
+					<div class="ratio-section__cell ratio-section__header">
+						<h3 class="ratio-section__title" id="goal">
+							<div class="ratio-section__sort-ico"></div>
+							<div class="ratio-section__text_desktop">Гол</div>
+							<div class="ratio-section__text_mobile">Г</div>
+						</h3>
+					</div>
+					<div class="ratio-section__cell ratio-section__header">
+						<h3 class="ratio-section__title" id="pass">
+							<div class="ratio-section__sort-ico"></div>
+							<div class="ratio-section__text_desktop">Пас</div>
+							<div class="ratio-section__text_mobile">П</div>
+						</h3>
+					</div>
+					<div class="ratio-section__cell ratio-section__header">
+						<h3 class="ratio-section__title" id="goal-pass">
+							<div class="ratio-section__sort-ico"></div>
+							<div class="ratio-section__text_desktop">Гол + пас</div>
+							<div class="ratio-section__text_mobile">Г + П</div>
+						</h3>
+					</div>
+					<div class="ratio-section__cell ratio-section__header">
+						<h3 class="ratio-section__title" id="rating">
+							<div class="ratio-section__sort-ico"></div>
+							<div class="ratio-section__text_desktop">Рейтинг</div>
+							<div class="ratio-section__text_mobile">Р</div>
+						</h3>
+					</div>
+				</div>
+
 			</section>
 
 		</main>
@@ -400,7 +450,7 @@
 			</div>
 		</div>
 
-		<div class="page-footer__wrapper container">
+		<div class="page-footer__wrapper-bottom container">
 
 			<div class="page-footer__bottom">
 				<p class="page-footer__text">© Все права защищены</p>
@@ -446,7 +496,8 @@
 		</div>
 	</footer>
 
-	<script src="js/script.js"></script>
+	<script src="js/hamburger.js"></script>
+	<script src="js/table.js"></script>
 </body>
 
 </html>

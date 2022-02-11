@@ -6,7 +6,6 @@
 	@media (min-width: $tablet-width) {
 		width: 1015px;
 		height: 184px;
-		margin-top: 20px;
 		border-radius: 10px;
 	}
 
@@ -96,6 +95,7 @@
 		right: -5px;
 		color: #5a60e7;
 		font-size: 1.2rem;
+		line-height: 130%;
 		background: #ffffff;
 		border-radius: 10px;
 		padding: 0 5px;
@@ -129,6 +129,7 @@
 		justify-content: center;
 		align-items: center;
 		color: #acaff3;
+		font-family: "Montserrat", "Verdana", sans-serif;
 		background: transparent;
 		border-radius: 3px;
 		outline: none;
@@ -215,11 +216,12 @@
 
 	&__name-result {
 		font-size: 1rem;
-		font-weight: 600;
+		font-weight: 400;
 		color: #faf9f9;
 
 		@media (min-width: $tablet-width) {
 			font-size: 1.5rem;
+			font-weight: 600;
 		}
 	}
 
