@@ -84,7 +84,7 @@ body {
 }
 
 .page-header__logo {
-  background-image: url("/assets/svg/logo-black.svg");
+  background-image: url("assets/svg/logo-black.svg");
 }
 
 .page-header__main-content {
@@ -163,12 +163,12 @@ body {
 
 .page-header__football-ico {
   margin-left: 10px;
-  background-image: url("/assets/svg/football.svg");
+  background-image: url("assets/svg/football.svg");
 }
 
 .page-header__arrow-down-ico {
   margin-right: 5px;
-  background-image: url("/assets/svg/arrow-down.svg");
+  background-image: url("assets/svg/arrow-down.svg");
 }
 
 .page-header__avatar-wrapper {
@@ -197,7 +197,7 @@ body {
 .page-header__avatar-img {
   width: 34px;
   height: 34px;
-  background-image: url("/assets/img/avatar.jpg");
+  background-image: url("assets/img/avatar.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -209,7 +209,7 @@ body {
   height: 32px;
   margin-right: 20px;
   position: relative;
-  background-image: url("/assets/svg/bag.svg");
+  background-image: url("assets/svg/bag.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -424,7 +424,7 @@ body {
 }
 
 .page-footer__logo {
-  background-image: url("/assets/svg/logo-white.svg");
+  background-image: url("assets/svg/logo-white.svg");
 }
 
 .page-footer__store-wrapper {
@@ -463,18 +463,18 @@ body {
 }
 
 .page-footer__appstore {
-  background-image: url("/assets/svg/store/appstore.svg");
+  background-image: url("assets/svg/store/appstore.svg");
 }
 
 .page-footer__googleplay {
   margin-left: 10px;
-  background-image: url("/assets/svg/store/googleplay.svg");
+  background-image: url("assets/svg/store/googleplay.svg");
 }
 
 .page-footer__phone-ico {
   display: none;
   margin-right: 10px;
-  background-image: url("/assets/svg/contacts/phone.svg");
+  background-image: url("assets/svg/contacts/phone.svg");
 }
 
 @media (min-width: 768px) {
@@ -486,7 +486,7 @@ body {
 .page-footer__email-ico {
   display: none;
   margin-right: 10px;
-  background-image: url("/assets/svg/contacts/email.svg");
+  background-image: url("assets/svg/contacts/email.svg");
 }
 
 @media (min-width: 768px) {
@@ -656,7 +656,7 @@ body {
           align-items: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  background-image: url("/assets/svg/ellipse.svg");
+  background-image: url("assets/svg/ellipse.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -664,7 +664,7 @@ body {
 .aside__avatar-img {
   width: 70px;
   height: 70px;
-  background-image: url("/assets/img/avatar.jpg");
+  background-image: url("assets/img/avatar.jpg");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
@@ -722,7 +722,7 @@ body {
 }
 
 .aside__ratio-up-ico {
-  background-image: url("/assets/svg/ratio-up.svg");
+  background-image: url("assets/svg/ratio-up.svg");
 }
 
 .aside__name {
@@ -788,13 +788,13 @@ body {
 .aside__edit-ico {
   margin-top: 4px;
   margin-right: 5px;
-  background-image: url("/assets/svg/edit.svg");
+  background-image: url("assets/svg/edit.svg");
 }
 
 .aside__share-ico {
   margin-top: 4px;
   margin-left: 5px;
-  background-image: url("/assets/svg/share.svg");
+  background-image: url("assets/svg/share.svg");
 }
 
 .ratio-section {
@@ -934,7 +934,7 @@ body {
   height: 12px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("/assets/svg/sort.svg");
+  background-image: url("assets/svg/sort.svg");
 }
 
 .ratio-section__sort-ico_invert {
@@ -976,7 +976,7 @@ body {
 }
 
 .format-section__arrow-down-ico {
-  background-image: url("/assets/svg/arrow-down.svg");
+  background-image: url("assets/svg/arrow-down.svg");
 }
 
 .stat-section {
@@ -1012,7 +1012,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    background-image: url("/assets/svg/pattern.svg");
+    background-image: url("assets/svg/pattern.svg");
     background-repeat: no-repeat;
     background-position: top 20px right 20px;
     background-size: 150px 150px;
@@ -1074,7 +1074,7 @@ body {
   width: 35px;
   height: 40px;
   position: relative;
-  background-image: url("/assets/svg/achieve/achieve-monochrome.svg");
+  background-image: url("assets/svg/achieve/achieve-monochrome.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1082,7 +1082,7 @@ body {
 
 .stat-section__achieve_active {
   margin-right: 5px;
-  background-image: url("/assets/svg/achieve/achieve-color.svg");
+  background-image: url("assets/svg/achieve/achieve-color.svg");
 }
 
 .stat-section__active-achieves .stat-section__achieve {
@@ -1421,7 +1421,7 @@ body {
   width: 24px;
   height: 24px;
   margin-left: 5px;
-  content: url("/assets/svg/arrow-down.svg");
+  content: url("assets/svg/arrow-down.svg");
 }
 
 .hamburger {
@@ -1441,7 +1441,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url("/assets/svg/burger.svg");
+  background-image: url("assets/svg/burger.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1498,7 +1498,7 @@ body {
   width: 24px;
   height: 24px;
   margin-left: 5px;
-  content: url("/assets/svg/arrow-down.svg");
+  content: url("assets/svg/arrow-down.svg");
 }
 
 .social {
@@ -1557,31 +1557,31 @@ body {
 }
 
 .social__instagram {
-  background-image: url("/assets/svg/social/instagram.svg");
+  background-image: url("assets/svg/social/instagram.svg");
 }
 
 .social__vk {
-  background-image: url("/assets/svg/social/vk.svg");
+  background-image: url("assets/svg/social/vk.svg");
 }
 
 .social__facebook {
-  background-image: url("/assets/svg/social/facebook.svg");
+  background-image: url("assets/svg/social/facebook.svg");
 }
 
 .social__youtube {
-  background-image: url("/assets/svg/social/youtube.svg");
+  background-image: url("assets/svg/social/youtube.svg");
 }
 
 .social__telegram {
-  background-image: url("/assets/svg/social/telegram.svg");
+  background-image: url("assets/svg/social/telegram.svg");
 }
 
 .social__whatsapp {
-  background-image: url("/assets/svg/social/whatsapp.svg");
+  background-image: url("assets/svg/social/whatsapp.svg");
 }
 
 .social__share {
-  background-image: url("/assets/svg/social/share.svg");
+  background-image: url("assets/svg/social/share.svg");
 }
 
 .nav-second {
@@ -1706,32 +1706,32 @@ body {
   height: 24px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("/assets/svg/arrow-down.svg");
+  background-image: url("assets/svg/arrow-down.svg");
 }
 
 .nav-second__user-ico::before {
-  background-image: url("/assets/svg/menu/chart.svg");
+  background-image: url("assets/svg/menu/chart.svg");
 }
 
 @media (min-width: 768px) {
   .nav-second__user-ico::before {
-    background-image: url("/assets/svg/menu/user.svg");
+    background-image: url("assets/svg/menu/user.svg");
   }
 }
 
 .nav-second__calendar-ico::before {
-  background-image: url("/assets/svg/menu/calendar.svg");
+  background-image: url("assets/svg/menu/calendar.svg");
 }
 
 .nav-second__report-ico::before {
-  background-image: url("/assets/svg/menu/report.svg");
+  background-image: url("assets/svg/menu/report.svg");
 }
 
 .nav-second__history-ico::before {
-  background-image: url("/assets/svg/menu/history.svg");
+  background-image: url("assets/svg/menu/history.svg");
 }
 
 .nav-second__log-out-ico::before {
-  background-image: url("/assets/svg/menu/log-out.svg");
+  background-image: url("assets/svg/menu/log-out.svg");
 }
 /*# sourceMappingURL=style.css.map */

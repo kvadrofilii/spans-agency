@@ -30,7 +30,7 @@
 	}
 
 	&__logo {
-		background-image: url("/assets/svg/logo-black.svg");
+		background-image: url("assets/svg/logo-black.svg");
 	}
 
 	&__main-content {
@@ -80,12 +80,12 @@
 
 	&__football-ico {
 		margin-left: 10px;
-		background-image: url("/assets/svg/football.svg");
+		background-image: url("assets/svg/football.svg");
 	}
 
 	&__arrow-down-ico {
 		margin-right: 5px;
-		background-image: url("/assets/svg/arrow-down.svg");
+		background-image: url("assets/svg/arrow-down.svg");
 	}
 
 	&__avatar-wrapper {
@@ -106,7 +106,7 @@
 	&__avatar-img {
 		width: 34px;
 		height: 34px;
-		background-image: url("/assets/img/avatar.jpg");
+		background-image: url("assets/img/avatar.jpg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -118,7 +118,7 @@
 		height: 32px;
 		margin-right: 20px;
 		position: relative;
-		background-image: url("/assets/svg/bag.svg");
+		background-image: url("assets/svg/bag.svg");
 		background-repeat: no-repeat;
 		background-position: center;
 		cursor: pointer;

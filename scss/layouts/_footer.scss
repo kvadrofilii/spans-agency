@@ -100,7 +100,7 @@
 	}
 
 	&__logo {
-		background-image: url("/assets/svg/logo-white.svg");
+		background-image: url("assets/svg/logo-white.svg");
 	}
 
 	&__store-wrapper {
@@ -131,18 +131,18 @@
 	}
 
 	&__appstore {
-		background-image: url("/assets/svg/store/appstore.svg");
+		background-image: url("assets/svg/store/appstore.svg");
 	}
 
 	&__googleplay {
 		margin-left: 10px;
-		background-image: url("/assets/svg/store/googleplay.svg");
+		background-image: url("assets/svg/store/googleplay.svg");
 	}
 
 	&__phone-ico {
 		display: none;
 		margin-right: 10px;
-		background-image: url("/assets/svg/contacts/phone.svg");
+		background-image: url("assets/svg/contacts/phone.svg");
 
 		@media (min-width: $tablet-width) {
 			display: block;
@@ -152,7 +152,7 @@
 	&__email-ico {
 		display: none;
 		margin-right: 10px;
-		background-image: url("/assets/svg/contacts/email.svg");
+		background-image: url("assets/svg/contacts/email.svg");
 
 		@media (min-width: $tablet-width) {
 			display: block;

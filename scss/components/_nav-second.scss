@@ -104,27 +104,27 @@
 		height: 24px;
 		background-repeat: no-repeat;
 		background-position: center;
-		background-image: url("/assets/svg/arrow-down.svg");
+		background-image: url("assets/svg/arrow-down.svg");
 	}
 
 	&__user-ico::before {
-		background-image: url("/assets/svg/menu/chart.svg");
+		background-image: url("assets/svg/menu/chart.svg");
 
 		@media (min-width: $tablet-width) {
-			background-image: url("/assets/svg/menu/user.svg");
+			background-image: url("assets/svg/menu/user.svg");
 		}
 	}
 
 	&__calendar-ico::before {
-		background-image: url("/assets/svg/menu/calendar.svg");
+		background-image: url("assets/svg/menu/calendar.svg");
 	}
 	&__report-ico::before {
-		background-image: url("/assets/svg/menu/report.svg");
+		background-image: url("assets/svg/menu/report.svg");
 	}
 	&__history-ico::before {
-		background-image: url("/assets/svg/menu/history.svg");
+		background-image: url("assets/svg/menu/history.svg");
 	}
 	&__log-out-ico::before {
-		background-image: url("/assets/svg/menu/log-out.svg");
+		background-image: url("assets/svg/menu/log-out.svg");
 	}
 }
