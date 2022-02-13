@@ -24,4 +24,8 @@ body {
 	line-height: 110%;
 	font-family: "Montserrat", "Verdana", sans-serif;
 	color: #222222;
+
+	&.hamburger__toggle {
+		overflow: hidden;
+	}
 }
