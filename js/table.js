@@ -7,7 +7,7 @@ let ratioDB = [
 		gol: 218,
 		pass: 146,
 		golPass: 364,
-		ratio: 89.40
+		ratio: 89.80
 	},
 	{
 		season: 'Сезон 2020/2019',
@@ -15,7 +15,7 @@ let ratioDB = [
 		gol: 242,
 		pass: 122,
 		golPass: 364,
-		ratio: 89.40
+		ratio: 89.20
 	},
 	{
 		season: 'Сезон 2019/2018',
@@ -23,7 +23,7 @@ let ratioDB = [
 		gol: 173,
 		pass: 164,
 		golPass: 337,
-		ratio: 89.40
+		ratio: 89.30
 	},
 	{
 		season: 'Сезон 2018/2017',
@@ -39,54 +39,29 @@ let ratioDB = [
 		gol: 174,
 		pass: 102,
 		golPass: 276,
-		ratio: 89.40
+		ratio: 89.10
 	},
 ];
-const table = document.querySelector('.ratio-section__table');
-const sort = table.querySelectorAll('.ratio-section__title');
-const ico = table.querySelectorAll('.ratio-section__sort-ico');
+const table = document.querySelector('.table');
+const sort = table.querySelectorAll('.table__title');
+const ico = table.querySelectorAll('.table__sort-ico');
 const key = ['number', 'gol', 'pass', 'golPass', 'ratio'];
 let isSort = [false, false, false, false, false];
 
-
+// Дефолтный вывод таблицы
 outputTable();
 
-sort[1].addEventListener('click', () => {
-	ico[0].classList.toggle('ratio-section__sort-ico_invert')
-	cleanTable();
-	sorting(0);
-	outputTable();
-});
+// Обработчики событий для сортировки
+for (let i = 0; i < 5; i++) {
+	sort[i + 1].addEventListener('click', () => {
+		ico[i].classList.toggle('table__sort-ico_invert')
+		cleanTable();
+		sorting(i);
+		outputTable();
+	});
+}
 
-sort[2].addEventListener('click', () => {
-	ico[1].classList.toggle('ratio-section__sort-ico_invert')
-	cleanTable();
-	sorting(1);
-	outputTable();
-});
-
-sort[3].addEventListener('click', () => {
-	ico[2].classList.toggle('ratio-section__sort-ico_invert')
-	cleanTable();
-	sorting(2);
-	outputTable();
-});
-
-sort[4].addEventListener('click', () => {
-	ico[3].classList.toggle('ratio-section__sort-ico_invert')
-	cleanTable();
-	sorting(3);
-	outputTable();
-});
-
-sort[5].addEventListener('click', () => {
-	ico[4].classList.toggle('ratio-section__sort-ico_invert')
-	cleanTable();
-	sorting(4);
-	outputTable();
-});
-
-
+// Сортировка таблицы
 function sorting(item) {
 	isSort[item] = !isSort[item];
 	isSort[item]
@@ -96,18 +71,20 @@ function sorting(item) {
 		ratioDB = ratioDB.sort((x, y) => y[key[item]] - x[key[item]]);
 }
 
+// Удаление всех ячеек таблицы кроме заголовка
 function cleanTable() {
-	const cell = table.querySelectorAll('.ratio-section__cell_output');
+	const cell = table.querySelectorAll('.table__cell_output');
 	cell.forEach((item) => {
 		item.remove();
 	})
 }
 
+// Вывод всех ячеек таблицы кроме заголовка
 function outputTable() {
 	ratioDB.forEach((item) => {
 		for (let key in item) {
 			table.insertAdjacentHTML('beforeend',
-				`<div class="ratio-section__cell ratio-section__cell_output"> ${item[key]}</li>`);
+				`<div class="table__cell table__cell_output"> ${item[key]}</li>`);
 		}
 	});
 }
